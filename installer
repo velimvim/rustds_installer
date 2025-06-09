@@ -7,9 +7,7 @@ xbps-install -Suy
 echo "
 ----->[Installing libraries...]
 "
-xbps-install -Sy void-repo-multilib
-xbps-install -S
-xbps-install libgcc-32bit libstdc++-32bit
+xbps-install -Sy void-repo-multilib libgcc-32bit libstdc++-32bit screen wget curl
 echo "
 ----->[Installing steamcmd...]
 "
