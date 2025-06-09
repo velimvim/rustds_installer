@@ -4,11 +4,11 @@ To download the installer, write:
 
 To run, write:
 
-```sudo bash installer```
+```sudo bash rustds_installer/installer```
 
 To run in the screen, write:
 
-```sudo screen -S install bash installer```
+```sudo screen -S install bash rustds_installer/installer```
 
 You can detach the screen by pressing CTRL + A + D
 
@@ -22,11 +22,11 @@ ________________________________________________________________________________
 
 Чтобы запустить установщик, напишите
 
-```sudo bash installer```
+```sudo bash rustds_installer/installer```
 
 Чтобы запустить установщик в режиме окна, напишите:
 
-```sudo screen -S install bash installer```
+```sudo screen -S install bash rustds_installer/installer```
 
 Вы можете выйти из окна, нажав CTRL + A + D
 
