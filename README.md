@@ -18,6 +18,8 @@ You can back to screen by typing:
 
 ```screen -r install```
 ______________________________________________________________________________________
+ТОЛЬКО ДЛЯ VOID LINUX!!!
+
 Чтобы скачать установщик, напишите в консоль:
 
 ```git clone https://github.com/velimvim/rustds_installer/```
