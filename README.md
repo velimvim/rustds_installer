@@ -1,4 +1,4 @@
-To download the installer, write:/n
+To download the installer, write:
 ```git clone https://github.com/velimvim/rustds_installer/```
 To run, write:
 ```sudo bash installer```
