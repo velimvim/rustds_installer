@@ -1,3 +1,5 @@
+ONLY FOR VOID LINUX!!!
+
 To download the installer, write:
 
 ```git clone https://github.com/velimvim/rustds_installer/```
