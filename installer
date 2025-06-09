@@ -2,7 +2,7 @@
 echo "
 ----->[Updating system...]
 "
-sleep 3
+sleep 3000
 xbps-install -Suy
 echo "
 ----->[Installing libraries...]
@@ -13,7 +13,7 @@ xbps-install libgcc-32bit libstdc++-32bit
 echo "
 ----->[Installing steamcmd...]
 "
-sleep 3
+sleep 3000
 useradd -m server
 mkdir /home/server/steamcmd
 wget http://media.steampowered.com/client/steamcmd_linux.tar.gz
@@ -22,12 +22,12 @@ rm -rf steamcmd_linux.tar.gz
 echo "
 ----->[Installing RUST server...]
 "
-sleep 3
+sleep 3000
 bash /home/server/steamcmd/steamcmd.sh +login anonymous +force_install_dir /home/server/steamcmd/rust +app_update 258550 +exit
 echo "
 ----->[Installing our tools for RUST server...]
 "
-sleep 3
+sleep 3000
 git clone https://github.com/velimvim/rust_tool
 tar -xf scripts.tar.gz /home/server/steamcmd/rust
 mv /home/server/steamcmd/rust/rust_tool/* /home/server/steamcmd/rust/
