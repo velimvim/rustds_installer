@@ -36,5 +36,5 @@ rm -rf scripts.tar.gz
 mv /home/server/steamcmd/rust/scripts/rust /usr/local/bin
 echo "
 ----->[Completed.]
-(Join to konataa.ru)
+(Visit konataa.ru)
 "
