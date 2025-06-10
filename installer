@@ -18,6 +18,7 @@ read x
 y=$(openssl passwd -6 $x)
 sudo useradd -p $y rustds
 mkdir /home/rustds/steamcmd
+mkdir /home/rustds/steamcmd/rust
 wget http://media.steampowered.com/client/steamcmd_linux.tar.gz
 tar -xf steamcmd_linux.tar.gz -C /home/rustds/steamcmd
 rm -rf steamcmd_linux.tar.gz
