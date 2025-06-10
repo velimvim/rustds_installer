@@ -16,8 +16,8 @@ echo "
 ----->Create a password for the server user:"
 read x
 y=$(openssl passwd -6 $x)
-sudo useradd -p $y server
-mkdir /home/server/steamcmd
+sudo useradd -p $y rustds
+mkdir /home/rustds/steamcmd
 wget http://media.steampowered.com/client/steamcmd_linux.tar.gz
 tar -xf steamcmd_linux.tar.gz -C /home/server/steamcmd
 rm -rf steamcmd_linux.tar.gz
@@ -25,17 +25,17 @@ echo "
 ----->[Installing RUST server...]
 "
 sleep 3
-bash /home/server/steamcmd/steamcmd.sh +login anonymous +force_install_dir /home/server/steamcmd/rust +app_update 258550 +exit
+bash /home/rustds/steamcmd/steamcmd.sh +login anonymous +force_install_dir /home/rustds/steamcmd/rust +app_update 258550 +exit
 echo "
 ----->[Installing our tools for RUST server...]
 "
 sleep 3
 git clone https://github.com/velimvim/rust_tool
-tar -xf scripts.tar.gz /home/server/steamcmd/rust
-mv /home/server/steamcmd/rust/rust_tool/* /home/server/steamcmd/rust/
-rm -rf /home/server/steamcmd/rust/rust_tool
+tar -xf scripts.tar.gz /home/rustds/steamcmd/rust
+mv /home/rustds/steamcmd/rust/rust_tool/* /home/rustds/steamcmd/rust/
+rm -rf /home/rustds/steamcmd/rust/rust_tool
 rm -rf scripts.tar.gz
-mv /home/server/steamcmd/rust/scripts/rust /usr/local/bin
+mv /home/rustds/steamcmd/rust/scripts/rust /usr/local/bin
 echo "
 ----->[Completed.]
 (Visit konataa.ru)
